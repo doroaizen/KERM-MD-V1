@@ -42,7 +42,7 @@ const Crypto = require('crypto')
 const path = require('path')
 const prefix = config.PREFIX
 
-const ownerNumber = ['923003588997']
+const ownerNumber = ['237656520674']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
@@ -62,7 +62,7 @@ const port = process.env.PORT || 9090;
 //=============================================
 
 async function connectToWA() {
-console.log("CONNECTING ALI-MD-V1🧬...");
+console.log("CONNECTING KERM_MD-V1🧬...");
 const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/')
 var { version } = await fetchLatestBaileysVersion()
 
@@ -90,23 +90,24 @@ require("./plugins/" + plugin);
 }
 });
 console.log('PLUGINS FILES INSTALL SUCCESSFULLY ✅')
-console.log('ALI_MD-V1 CONNECTED TO WHATSAPP ENJOY ✅')
+console.log('KERM_MD-V1 CONNECTED TO WHATSAPP ENJOY ✅')
 
 let up = `*╭──────────────●●►*
-> *➺ALI_ᴍᴅ-ᴠ1 ᴄᴏɴɴᴇᴄᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʏ ᴛʏᴘᴇ .ᴍᴇɴᴜ ᴛᴏ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴋɢ ᴛᴇᴄʜ✅*
+> *➺Kᴇʀᴍ_ᴍᴅ-ᴠ1 ᴄᴏɴɴᴇᴄᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʏ ᴛʏᴘᴇ .ᴍᴇɴᴜ ᴛᴏ ᴄᴏᴍᴍᴀɴᴅ ʟɪsᴛ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴋɢ ᴛᴇᴄʜ✅*
 
 > *❁ᴊᴏɪɴ ᴏᴜʀ ᴡʜᴀᴛsᴀᴘᴘ ᴄʜᴀɴɴᴇʟ ғᴏʀ ᴜᴘᴅᴀᴛᴇs Kᴇʀᴍ_ᴍᴅ-ᴠ1❁*
 
-*https://whatsapp.com/channel/0029Vafn6hc7DAX3fzKtn45*
+*https://whatsapp.com/channel/0029Vafn6hc7DAX3fzsKtn45*
 
 > *❁ᴊᴏɪɴ ᴏᴜʀ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ ғᴏʀ ᴜᴘᴅᴀᴛᴇs Kᴇʀᴍ_ᴍᴅ-ᴠ1❁*
 
 *https://youtube.com/@KermHackTools-s9s*
 
-*╭⊱✫🐲 ALI-MD-V1 🐲✫⊱╮*
-*│✫➠ - 📂REPOSITORY NAME:* *ALI-MD-V1*
+*╭⊱✫🐲 KERM-MD-V1 🐲✫⊱╮*
+*│✫➠ - 📂REPOSITORY NAME:* *KERM-MD-V1*
 *│✫➠ - 📃DESCRIPTION:* *THE WORLD BEST WHATSAPP BOT♻️*
-*│✫➠ - 🛡️OWNER:* *ALI*
+*│✫➠ - 🛡️OWNER:* *KG TECH🇨🇲*
+*│✫➠ - 🌐URL:* *https://github.com/Kgtech-cmr/KERM-MD-V1*
 
 *YOUR BOT ACTIVE NOW ENJOY♥️🪄*\n\n*PREFIX: ${prefix}*
 
@@ -146,7 +147,7 @@ const isOwner = ownerNumber.includes(senderNumber) || isMe
 const botNumber2 = await jidNormalizedUser(conn.user.id);
 const groupMetadata = isGroup ? await conn.groupMetadata(from).catch(e => {}) : ''
 const groupName = isGroup ? groupMetadata.subject : ''
-const participants = isGroup ? await  : ''
+const participants = isGroup ? await groupMetadata.participants : ''
 const groupAdmins = isGroup ? await getGroupAdmins(participants) : ''
 const isBotAdmins = isGroup ? groupAdmins.includes(botNumber2) : false
 const isAdmins = isGroup ? groupAdmins.includes(sender) : false
@@ -178,20 +179,20 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
             }
         
 //================ownerreact==============
-if(senderNumber.includes("923003588997")){
+if(senderNumber.includes("23777777777")){
 if(isReact) return
 m.react("👑")
 }
-if(senderNumber.includes("923003588997")){
+if(senderNumber.includes("237777777777")){
 if(isReact) return
 m.react("👑")
 }
-if(senderNumber.includes("923003588997")){
+if(senderNumber.includes("923251869133")){
 if(isReact) return
 m.react("🦋")
    }
 
-if(senderNumber.includes("923003588997")){
+if(senderNumber.includes("447783770746")){
 if(isReact) return
 m.react("🎀")
    }
